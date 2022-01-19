@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { HeadingAOS } from './hooks'
 import { Movies, MidVid, Testimonial, Upcoming, About } from './SubComponent'
 import Image from 'next/image'
+import Gallery from './SubComponent/Gallery'
 
 const Home = (props) => {
   const vid = useRef()
@@ -38,7 +39,7 @@ const Home = (props) => {
       vid.current.play()
     }
   }
-  const {intro,movies,info,testimonial}=props
+  const {intro,movies,info,testimonial,gallery,event}=props
   return (
     <div className="home">
       <ReactVisibilitySensor onChange={ChangeHandler}>
@@ -67,7 +68,10 @@ const Home = (props) => {
         <MidVid info={info} />
       </div>
       <div className="home-upcoming">
-        <Upcoming />
+        <Upcoming event={event} />
+      </div>
+      <div className="home-gallery">
+        <Gallery gallery={gallery} />
       </div>
       <div className="home-testimonial">
         <Testimonial testimonial={testimonial} />

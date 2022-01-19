@@ -18,14 +18,20 @@ const Movies = ({movies}) => {
 
     const breakpoints = {
         "410": {
-            slidesPerView: 2
+            slidesPerView: 1
         },
         "640": {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
         "1000": {
+            slidesPerView: 3
+        },
+        "2100": {
             slidesPerView: 4
-        }
+        },
+        "2500": {
+            slidesPerView: 5
+        },
     }
     return (
         <>

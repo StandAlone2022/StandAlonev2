@@ -613,6 +613,16 @@ a {
   }
 }
 
+.home-gallery {
+  padding: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .home-gallery {
+    padding: 1rem;
+  }
+}
+
 .home-about {
   margin-top: 4rem;
 }

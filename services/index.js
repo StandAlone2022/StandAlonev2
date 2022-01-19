@@ -175,19 +175,19 @@ export const getGallery = async () => {
   return result;
 };
 
-// export const getEventTerms = async () => {
-//   const query = gql`
-//     query MyQuery {
-//       eventTerms {
-//         id
-//         points
-//       }
-//     }
-//   `;
-//   const result = await request(graphURI, query);
+export const getHomeEvent = async () => {
+  const query = gql`
+    query MyQuery {
+      homeEvents {
+        id
+        title
+        imageUrl
+        detail
+        redirectUrl
+      }
+    }
+  `;
+  const result = await request(graphURI, query);
 
-//   return result;
-// };
-
-
-// new
+  return result;
+};

@@ -387,6 +387,15 @@
       }
     }
   }
+  &-gallery{
+    padding: 3rem;
+
+    @media screen and (max-width:500px) {
+      &{
+        padding: 1rem;
+      }
+    }
+  }
   &-about {
     margin-top: 4rem;
     &-heading {

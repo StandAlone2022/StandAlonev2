@@ -14,12 +14,12 @@ const Footer = () => {
             </div>
             <div className="footer-detail">
                 <div className="footer-detail-icon">
-                    <a href="#">
+                    <a href="https://www.facebook.com/100073168740628/posts/114609317654693/?sfnsn=mo" target="_blank" rel="noreferrer">
                         <div className="footer-detail-icon-item">
                             <i className="fab fa-facebook"></i>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/sffa_usa/?utm_medium=copy_link" target="_blank" rel="noreferrer">
                         <div className="footer-detail-icon-item">
                             <i className="fab fa-instagram"></i>
                         </div>
@@ -45,15 +45,15 @@ const Footer = () => {
                     <h3>STANDALONE FILM FESTIVAL & AWARDS</h3>
                 </div>
                 <div className="footer-detail-address">
-                    <p>710 EAST COMMERCIAL STREET, LOS ANGELES, CA 90012 | 10A, GURUNAGAR SOCIETY, J P ROAD, FOUR BUNGALOW, ANDHERI (W) MUMBAI</p>
+                    <p>9607 Business Center Dr. Suite - G , Rancho Cucamonga CA - 91730 , USA </p>
                 </div>
                 <div className="footer-detail-number">
-                    <a href="tel:">+918838838384</a> || <a href="tel:">+918838838384</a>
+                    <a href="tel:+13104998483">+13104998483</a>
                 </div>
             </div>
             <div className="footer-copyright">
                 <h4>COPYRIGHT ©2021 STANDALONE FILM FESTIVAL & AWARDS - ALL RIGHTS RESERVED.</h4>
-                <h4>POWERED BY STANDALONE STREAM</h4>
+                <h4>POWERED BY CONNECTIXX </h4>
             </div>
         </footer>
     )
