@@ -450,8 +450,8 @@ a {
 
 .header .logo {
   position: absolute;
-  top: 1.7rem;
-  left: 50px;
+  top: -1rem;
+  left: 1.3rem;
   display: block;
   z-index: 11;
   -webkit-transition: all 250ms linear;

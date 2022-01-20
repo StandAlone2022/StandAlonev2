@@ -43,7 +43,7 @@ const Filter = ({setImg,gallery}) => {
             </div>
             <div className="gallery-filter-content">
                 {newData.map((d)=>(
-                    <Image src={d.imageUrl} alt={d.title} width={300} height={300} objectFit='contain' key={d.id    } data-aos="zoom-in"  />
+                    <Image src={d.imageUrl} alt={d.title} width={300} height={300} objectFit='cover' key={d.id    } data-aos="zoom-in"  />
                 ))}
             </div>
         </>

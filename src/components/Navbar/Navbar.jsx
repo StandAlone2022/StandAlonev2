@@ -7,7 +7,7 @@ const Navbar = () => {
         <header className="header">
             <Link href={"/"} passHref>
                 <a className="logo">
-                    <Image src={Logo} />
+                    <Image src={Logo} width={200} height={200} />
                 </a>
             </Link>
             <input
