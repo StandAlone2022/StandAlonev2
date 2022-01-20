@@ -518,6 +518,7 @@
         object-fit: cover;
         filter: drop-shadow(1rem 1rem 1rem black);
         border-radius: 1rem;
+        border: .5rem solid $primary-color;
       }
 
       &-detail {

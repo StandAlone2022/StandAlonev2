@@ -799,6 +799,7 @@ a {
   -webkit-filter: drop-shadow(1rem 1rem 1rem black);
           filter: drop-shadow(1rem 1rem 1rem black);
   border-radius: 1rem;
+  border: 0.5rem solid #F79824;
 }
 
 .home-midvid-video-detail {

@@ -13,11 +13,11 @@ const Contact = () => {
                         <div />
                         <div />
                     </div>
-                    <p className="text">
+                    {/* <p className="text">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda iste
                         facilis quos impedit fuga nobis modi debitis laboriosam velit reiciendis
                         quisquam alias corporis, maxime enim, optio ab dolorum sequi qui.
-                    </p>
+                    </p> */}
                 </div>
                 <div className="contact-body">
                     <div className="contact-info">
@@ -26,14 +26,14 @@ const Contact = () => {
                                 <i className="fas fa-mobile-alt" />
                             </span>
                             <span>Phone No.</span>
-                            <span className="text">1-2392-23928-2</span>
+                            <span className="text">+13104998483</span>
                         </div>
                         <div>
                             <span>
                                 <i className="fas fa-envelope-open" />
                             </span>
                             <span>E-mail</span>
-                            <span className="text">mail@company.com</span>
+                            <span className="text">Info@standalonefilmfestival.com</span>
                         </div>
                         <div>
                             <span>
@@ -41,16 +41,16 @@ const Contact = () => {
                             </span>
                             <span>Address</span>
                             <span className="text">
-                                2939 Patrick Street, Vicotria TX, United States
+                            9607 Business Center Dr. Suite - G , Rancho Cucamonga CA - 91730 , USA
                             </span>
                         </div>
-                        <div>
+                        {/* <div>
                             <span>
                                 <i className="fas fa-clock" />
                             </span>
                             <span>Opening Hours</span>
                             <span className="text">Monday - Friday (9:00 AM to 5:00 PM)</span>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="contact-form">
                         <form>
