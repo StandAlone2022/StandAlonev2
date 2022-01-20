@@ -576,6 +576,12 @@ a {
   padding: 3rem;
 }
 
+@media screen and (max-width: 500px) {
+  .home-movies .home-movies-cards-center {
+    padding: 1.4rem;
+  }
+}
+
 .home-movies .home-movies-cards-center-items {
   width: 1rem;
 }
@@ -662,6 +668,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+@media screen and (max-width: 500px) {
+  .home-about-section .section {
+    padding: 1rem;
+  }
 }
 
 .home-about-section .section-image {
@@ -825,6 +837,10 @@ a {
   }
 }
 
+.home-upcoming {
+  margin: 2rem 0;
+}
+
 .home-upcoming-heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,6 +999,10 @@ a {
   }
 }
 
+.home-testimonial {
+  margin-top: 2rem;
+}
+
 .home-testimonial-heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -998,7 +1018,7 @@ a {
 
 .home-testimonial-content {
   background-color: #F79824;
-  padding: 3rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   border-radius: 20px;
 }
 
@@ -1239,10 +1259,8 @@ a {
     font-size: 0.8rem;
   }
   .footer-link {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: inline-block;
+    text-align: center;
     font-size: 1rem;
   }
   .footer-link > * {
@@ -1726,7 +1744,7 @@ a {
 .movies-carousel-content {
   border-radius: 20px;
   margin-top: 3rem;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   background: #F79824;
 }
 
@@ -1971,7 +1989,7 @@ a {
 
 @media screen and (min-width: 200px) and (max-width: 400px) {
   .gallery-content-img {
-    height: 28rem;
+    height: 18rem;
     padding: 1rem;
   }
 }
@@ -1979,7 +1997,7 @@ a {
 @media screen and (min-width: 400px) and (max-width: 500px) {
   .gallery-content-img {
     padding: 1rem;
-    height: 23rem;
+    height: 19rem;
   }
 }
 

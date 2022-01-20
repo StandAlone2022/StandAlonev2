@@ -5,16 +5,16 @@ import { HeadingAOS, Visible } from "../hooks"
 const About = () => {
     const [isVis, setIsVis] = useState(false)
     const [comp1, setComp1] = useState(false)
-    
+
     useEffect(() => {
 
     }, [isVis])
     return (
         <>
             <div className="home-about">
-                
-                    <HeadingAOS title={"about"}>About</HeadingAOS>
-                
+
+                <HeadingAOS title={"about"}>About</HeadingAOS>
+
                 <Visible setIsVis={setIsVis}>
                     <div className="home-about-section ">
                         <div className="section ">
@@ -23,9 +23,9 @@ const About = () => {
                             </div>
                             <div className="section-detail">
                                 <p>
-                                The Standalone Film Festival & Awards is one of the most Biggest International Independent film festival Awards . It provides a common platform for the cinemas of the world to project the excellence of the motion picture industry.  SFFA is designed for the independent films across the world giving them a platform to launch their movie worldwide. The films are the result of the persistent efforts of dreamers, from internet celebrities to famous directors who have been working in the film industry for half a century, all of whom have never forgotten their originality and promoting the culture of their country. The Standalone Film Festival is an event unlike any other in the film industry, showing films from around the world for the public for a week so that people can contribute to the understanding and appreciation of film cultures of different nations and learn about their cultures, customs, women in the workplace, and art in other countries without traveling the world. Films from the U.S., Iran, India, China and Latin America are categorized by category. It also celebrates their films for the LGBT community.
+                                    The Standalone Film Festival & Awards is one of the most Biggest International Independent film festival Awards . It provides a common platform for the cinemas of the world to project the excellence of the motion picture industry.  SFFA is designed for the independent films across the world giving them a platform to launch their movie worldwide. The films are the result of the persistent efforts of dreamers, from internet celebrities to famous directors who have been working in the film industry for half a century, all of whom have never forgotten their originality and promoting the culture of their country. 
                                 </p>
-                                <div className="section-detail-vision">
+                                {/* <div className="section-detail-vision">
                                     {isVis && (
                                         <Typist cursor={{ show: false }} onTypingDone={() => setComp1(true)} avgTypingDelay={50}>
                                             <h3 className='section-detail-heading'>Vison</h3>
@@ -48,7 +48,7 @@ const About = () => {
 
                                         )
                                     }
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
