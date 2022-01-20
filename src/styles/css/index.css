@@ -691,6 +691,7 @@ a {
 .home-about-section .section-image img {
   width: 80%;
   border-radius: 50%;
+  border: .6rem solid black;
 }
 
 .home-about-section .section-detail {
