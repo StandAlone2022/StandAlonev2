@@ -81,13 +81,13 @@ const Event = ({ carousel, jury, card }) => {
                     <h1>Submit Fim For SSFA</h1>
                 </div>
                 <div className="event-submit-content" data-aos="zoom-in-up">
-                    <a href="www.ssfa.com">
+                    <a href="https://filmfreeway.com/standalonefilmfestaward">
                         <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640528706/samples/rs_w_297_h_100_cg_true_es3bcm.jpg"} width={300} height={100} objectFit="contain" />
                     </a>
-                    <a href="www.ssfa.com">
+                    <a href="#">
                         <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640528722/samples/rs_w_398_h_100_cg_true_o6xbku.png"} width={300} height={100} objectFit="contain" />
                     </a>
-                    <a href="www.ssfa.com">
+                    <a href="#">
                         <Image src={"https://res.cloudinary.com/dykwfe4cr/image/upload/v1640528738/samples/rs_w_480_h_100_cg_true_pvuiq4.png"} width={300} height={100} objectFit="contain" />
                     </a>
                 </div>
@@ -97,7 +97,6 @@ const Event = ({ carousel, jury, card }) => {
                     <h1>Terms & Condition</h1>
                 </div>
                 <div className="event-rules-content" data-aos="zoom-in-up">
-
                     <div className="event-rules-content-left" data-aos={`zoom-in`} >
                         <ul>
                             <li>
