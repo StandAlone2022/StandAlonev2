@@ -12,15 +12,16 @@ const Home = (props) => {
   const [volume, setVolume] = useState(false)
   const router = useRouter()
 
-  
-  const { intro, movies, info, testimonial, gallery, event,about } = props
+
+  const { intro, movies, info, testimonial, gallery, event, about } = props
   return (
     <div className="home">
-      
-        <div className="home-video scale-up-center">
+
+      <div className="home-video scale-up-center">
+        <a href="https://filmfreeway.com/standalonefilmfestaward" target=""> 
           <Image src={"https://res.cloudinary.com/standalone/image/upload/v1644246026/banner_fxm88n.jpg"} width={1900} height={1080} objectFit="contain" layout="responsive" />
-          
-        </div>
+        </a>
+      </div>
       <div className="home-submit">
         <HeadingAOS title={"submit"}>
           <h3>Submit For SFFA</h3>

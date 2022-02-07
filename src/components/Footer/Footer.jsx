@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
             <div className="footer-detail">
                 <div className="footer-detail-icon">
-                    <a href="https://www.facebook.com/StandaloneFilmFest" target="_blank" rel="noreferrer">
+                    <a href="https://www.facebook.com/people/Standalone-FilmFestivalusa/100073168740628/" target="_blank" rel="noreferrer">
                         <div className="footer-detail-icon-item">
                             <i className="fab fa-facebook"></i>
                         </div>
