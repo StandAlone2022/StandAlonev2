@@ -451,9 +451,6 @@ a {
 .header .logo {
   position: absolute;
   top: -1rem;
-  border-radius: 50%;
-  background: black;
-  left: 1.3rem;
   display: block;
   z-index: 11;
   -webkit-transition: all 250ms linear;
@@ -470,9 +467,6 @@ a {
   .header .menu-icon:checked + label,
   .header .menu-icon:not(:checked) + label {
     right: 55px;
-  }
-  .header .logo {
-    left: 30px;
   }
   .header .nav {
     right: 30px;

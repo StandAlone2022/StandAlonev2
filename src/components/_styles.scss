@@ -254,9 +254,9 @@
   .logo {
     position: absolute;
     top: -1rem;
-    border-radius: 50%;
-    background: black;
-    left: 1.3rem;
+    // border-radius: 50%;
+    // background: black;
+    // left: 1.3rem;
     display: block;
     z-index: 11;
     transition: all 250ms linear;
@@ -273,7 +273,7 @@
       right: 55px;
     }
     .logo {
-      left: 30px;
+      // left: 30px;
     }
     .nav {
       right: 30px;
