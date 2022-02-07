@@ -39,7 +39,7 @@ const Home = (props) => {
       vid.current.play()
     }
   }
-  const { intro, movies, info, testimonial, gallery, event } = props
+  const { intro, movies, info, testimonial, gallery, event,about } = props
   return (
     <div className="home">
       <ReactVisibilitySensor onChange={ChangeHandler}>
@@ -72,7 +72,7 @@ const Home = (props) => {
         <Movies movies={movies} />
       </div>
       <div className="home-about">
-        <About />
+        <About about={about} />
       </div>
       <div className="home-midvid">
         <MidVid info={info} />

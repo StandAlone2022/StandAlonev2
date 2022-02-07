@@ -1,11 +1,11 @@
 import {Layout,Home} from '../src/components'
-import { getGallery, getHomeEvent, getHomeIntro ,getHomeLowerVid,getMovies, Testimonial} from '../services'
+import { getGallery, getHomeAbout, getHomeEvent, getHomeIntro ,getHomeLowerVid,getMovies, Testimonial} from '../services'
 
-const index = ({intro,movie,info,testimonial,gallery,event}) => {
-    console.log({event})
+const index = ({intro,movie,info,testimonial,gallery,event,about}) => {
+    console.log({about})
     return (
         <Layout title={"Home"} description={"Stanalone Home"}>
-            <Home intro={intro} movies={movie} info={info} testimonial={testimonial} gallery={gallery} event={event} />
+            <Home intro={intro} movies={movie} info={info} testimonial={testimonial} gallery={gallery} event={event} about={about[0]} />
         </Layout>
     )
 }
@@ -20,6 +20,7 @@ export async function getServerSideProps(){
     const testimonial=await Testimonial() || [];
     const gallery=await getGallery() || []
     const event=await getHomeEvent() || []
+    const Abouts=await getHomeAbout() || []
     return {
         props:{
             intro:intro.homeIntros,
@@ -27,7 +28,8 @@ export async function getServerSideProps(){
             info: info.homeLowervideos,
             testimonial: testimonial.homeTestimonials,
             gallery: gallery.galleries,
-            event: event.homeEvents
+            event: event.homeEvents,
+            about: Abouts.homeAbouts
         }
     }
 }

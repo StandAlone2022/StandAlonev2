@@ -207,3 +207,19 @@ export const getAbout = async () => {
 
   return result;
 };
+
+export const getHomeAbout = async () => {
+  const query = gql`
+    query MyQuery {
+      homeAbouts {
+        id
+        name
+        info
+        imageUrl
+      }
+    }
+  `;
+  const result = await request(graphURI, query);
+
+  return result;
+};
