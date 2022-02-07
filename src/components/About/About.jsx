@@ -9,7 +9,7 @@ import { data } from "../../db/data"
 
 SwiperCore.use([Autoplay])
 
-const About = ({ team }) => {
+const About = ({ team, about }) => {
     const [animate, setAnimate] = useState(false)
     useEffect(() => {
         const { innerWidth } = window
@@ -32,21 +32,18 @@ const About = ({ team }) => {
                 <div className="about-intro-detail">
                     <div className="about-intro-detail-title">
                         <Typist cursor={{ show: false }} avgTypingDelay={100}>
-                            <h1>Mr Khullar</h1>
+                            <h1>{about.name}</h1>
                         </Typist>
                     </div>
                     <div className="about-intro-detail-content">
-                        <p>The Standalone Film Festival & Awards is one of the most Biggest International Independent film festival Awards .
-                            It provides a common platform for the cinemas of the world to project the excellence of the motion picture industry.
-                            SFFA is designed for the independent films across the world giving them a platform to launch their movie worldwide. The films are the result of the persistent efforts of dreamers, from internet celebrities to famous directors who have been working in the film industry for half a century, all of whom have never forgotten their originality and promoting the culture of their country.
-                            The Standalone Film Festival is an event unlike any other in the film industry, showing films from around the world for the public for a week so that people can contribute to the understanding and appreciation of film cultures of different nations and learn about their cultures, customs, women in the workplace, and art in other countries without traveling the world. Films from the U.S., Iran, India, China and Latin America are categorized by category. It also celebrates their films for the LGBT community.</p>
+                        <p>{about.info}</p>
 
 
                     </div>
                 </div>
                 <div className="about-intro-image">
                     <div className="about-intro-image-outer">
-                        <Image src="https://res.cloudinary.com/dykwfe4cr/image/upload/v1640203681/team_5_lhdhzb.png" height={500} width={500} objectFit="cover" />
+                        <Image src={about.imageUrl} height={500} width={500} objectFit="cover" />
                     </div>
                 </div>
             </div>
@@ -74,7 +71,7 @@ const About = ({ team }) => {
                     <h1>Our Team</h1>
                 </div>
                 <div className="about-team-content" data-aos="zoom-in">
-                    {team.map((d) =>  (
+                    {team.map((d) => (
                         <div key={d.id}>
                             <Card img={d.imageurl} name={d.name} role={d.role} about={d.detail} id={d.id} />
                         </div>

@@ -191,3 +191,19 @@ export const getHomeEvent = async () => {
 
   return result;
 };
+
+export const getAbout = async () => {
+  const query = gql`
+    query MyQuery {
+      abouts {
+        id
+        name
+        imageUrl
+        info
+      }
+    }
+  `;
+  const result = await request(graphURI, query);
+
+  return result;
+};

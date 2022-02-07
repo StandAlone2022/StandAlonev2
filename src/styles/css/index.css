@@ -451,6 +451,8 @@ a {
 .header .logo {
   position: absolute;
   top: -1rem;
+  border-radius: 50%;
+  background: black;
   left: 1.3rem;
   display: block;
   z-index: 11;
@@ -1116,7 +1118,7 @@ a {
 }
 
 .home-submit {
-  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .home-submit-heading {
