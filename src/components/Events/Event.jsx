@@ -11,8 +11,6 @@ import { useEffect } from "react";
 import Card from "./Card";
 
 SwiperCore.use([Pagination, Navigation]);
-
-
 const Event = ({ carousel, jury, card }) => {
     const breakpoints = {
         "360": {
