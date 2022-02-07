@@ -110,9 +110,9 @@ const Event = ({ carousel, jury, card }) => {
                             <li>
                                 <p>The selected films participate in The Online Awards nomination Festival which is held between Jan-April. In the 2021 year, due to the pandemic situation, it was between February 1, and March 31, at our virtual theatre, available online across the World.</p>
                             </li>
-                            <li>
+                            {/* <li>
                                 <p>The selected films participate in The Online Awards nomination Festival which is held between Jan-April. In the 2021 year, due to the pandemic situation, it was between February 1, and March 31, at our virtual theatre, available online across the World.Films screen through this secure server screener where visitors and guests from around the world can witness and vote for the film. On the basis of viewers' choice and votes, films are nominated for 42 categories of Awards which screen live from the last week of May at Hollywood and to honor filmmakers, actors, technicians at The Standalone Awards Show in Los Angeles on the 7th day of live screenings.</p>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>

@@ -12,52 +12,15 @@ const Home = (props) => {
   const [volume, setVolume] = useState(false)
   const router = useRouter()
 
-  useEffect(() => {
-    if (vid !== undefined) {
-      if (volume) {
-        vid.current.muted = false;
-      } else {
-        vid.current.muted = true;
-      }
-
-      document.addEventListener("visibilitychange", function () {
-        const state = document.visibilityState;
-        if (!vid.current.paused) {
-          if (state === "hidden") {
-            vid.current.pause()
-          } else {
-            vid.current.play()
-          }
-        }
-      })
-    }
-  }, [volume]);
-  const ChangeHandler = (visible) => {
-    if (!visible) {
-      vid.current.pause()
-    } else {
-      vid.current.play()
-    }
-  }
+  
   const { intro, movies, info, testimonial, gallery, event,about } = props
   return (
     <div className="home">
-      <ReactVisibilitySensor onChange={ChangeHandler}>
+      
         <div className="home-video scale-up-center">
-          <video src={intro[0].videoUrl} autoPlay muted ref={vid} />
-          {
-            volume ? (
-              <div className="home-video-unmute" onClick={() => setVolume(false)}>
-                <i className="fas fa-volume-up"></i>
-              </div>
-            ) : (
-              <div className="home-video-mute" onClick={() => setVolume(true)}>
-                <i className="fas fa-volume-mute"></i>
-              </div>
-            )
-          }
+          <Image src={"https://res.cloudinary.com/standalone/image/upload/v1644246026/banner_fxm88n.jpg"} width={1900} height={1080} objectFit="contain" layout="responsive" />
+          
         </div>
-      </ReactVisibilitySensor>
       <div className="home-submit">
         <HeadingAOS title={"submit"}>
           <h3>Submit For SFFA</h3>

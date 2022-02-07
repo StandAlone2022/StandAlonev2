@@ -11,6 +11,7 @@ const Footer = () => {
                 <Link href="/upcoming" passHref>Upcoming Events</Link>
                 <Link href="/awards" passHref>Awards</Link>
                 <Link href="/gallery" passHref>Gallery</Link>
+                <Link href="/contact" passHref>Contact</Link>
             </div>
             <div className="footer-detail">
                 <div className="footer-detail-icon">
