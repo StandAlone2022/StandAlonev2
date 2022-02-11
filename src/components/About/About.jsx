@@ -30,15 +30,14 @@ const About = ({ team, about }) => {
             </div>
             <div className="about-intro" data-aos="zoom-in">
                 <div className="about-intro-detail">
-                    <div className="about-intro-detail-title">
+                    <div className="about-intro-detail-title" >
                         <Typist cursor={{ show: false }} avgTypingDelay={100}>
                             <h1>{about.name}</h1>
+                            <p style={{marginTop:".2rem"}}>Founder of StandAlone</p>
                         </Typist>
                     </div>
                     <div className="about-intro-detail-content">
                         <p>{about.info}</p>
-
-
                     </div>
                 </div>
                 <div className="about-intro-image">
