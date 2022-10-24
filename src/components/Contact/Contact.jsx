@@ -9,28 +9,6 @@ const Contact = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm()
     const router=useRouter()
 
-    // const onSubmit = async (value) => {
-    //     let config = {
-    //         method: "post",
-    //         url: `/api/contact`,
-    //         header: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //         data: value
-    //     }
-
-    //     try {
-    //         const response = await axios(config)
-    //         console.log(response)
-
-    //         if (response.data.status === 200) {
-    //             console.log("Success")
-    //         }
-
-    //     } catch (error) {
-    //         console.log(error)
-    //     }
-    // }
     const sendEmail = (e) => {
         e.preventDefault()
         emailjs.sendForm("service_ype9yqg", "template_6teqpwf", e.target, "user_C0PK3Dl0lsa7cIMjqxUpK").then((res) => {
@@ -52,11 +30,7 @@ const Contact = () => {
                         <div />
                         <div />
                     </div>
-                    {/* <p className="text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda iste
-                        facilis quos impedit fuga nobis modi debitis laboriosam velit reiciendis
-                        quisquam alias corporis, maxime enim, optio ab dolorum sequi qui.
-                    </p> */}
+                    
                 </div>
                 <div className="contact-body">
                     <div className="contact-info">
@@ -83,13 +57,7 @@ const Contact = () => {
                                 9607 Business Center Dr. Suite - G , Rancho Cucamonga CA - 91730 , USA
                             </span>
                         </div>
-                        {/* <div>
-                            <span>
-                                <i className="fas fa-clock" />
-                            </span>
-                            <span>Opening Hours</span>
-                            <span className="text">Monday - Friday (9:00 AM to 5:00 PM)</span>
-                        </div> */}
+                        
                     </div>
                     <div className="contact-form">
                         <form onSubmit={sendEmail}>
